@@ -96,8 +96,8 @@ select {
   text-transform: uppercase;
   grid-row:1;
   grid-column: 7;
-  
   font-family:'Segoe UI', Tahoma, sans-serif;
+  margin-top: 1em;
 }
 .navbar p{
   color: #06aee2;
@@ -110,8 +110,7 @@ select {
   letter-spacing: 0.7px;
   margin: 1em 0;
   background-color: rgba(233, 211, 170, 0.9);
-  border-radius: 10px;
-  
+  border-radius: 5px;
 }
 .navbar p:hover{
   border-radius: 5px;
@@ -138,6 +137,7 @@ select {
   align-items: center;  
   justify-content:space-between;
   text-align: center;
+
 }
 .intro-h{
   display: flex;
@@ -209,7 +209,7 @@ select {
   align-items: center;  
   justify-content:space-between;
   text-align: center;
-  /* border: 1px solid black; */
+ 
 }
 .whyFromUs-h{
   order: 1;
@@ -217,20 +217,14 @@ select {
   flex-direction: column;
 }
 .whyFromUs-box h1{
-  font-size: 3rem;
+  font-size: 2rem;
   transform: rotate(180deg);
   order: 1;
   margin-bottom: 0.5em;
   color: azure;
   
 }
-.whyFromUs-box h3{
-  text-align: end;
-  margin-bottom: 0.8em;
-  transform: rotate(180deg);
-  color: azure;
 
-}
 .whyFromUs-box p{
   margin:0 1em ;
   margin-top: 7em;
@@ -253,7 +247,7 @@ select {
 }
 .green-h{
   color: greenyellow;
-  font-size: 1.15rem;
+  font-size: 4rem;
 }
 /* ********************************** choose section 3 */
 .choose{
@@ -367,4 +361,80 @@ select {
 .choose-shipping p{
   margin-top: 4rem;
 }
+/* ************************** create order */
 
+
+.create{
+  height: 2300px;
+  width: 100vw;
+  display: grid;
+  grid-template: repeat(13,1fr) / repeat(13,1fr);
+  grid-gap: 8px;
+  background-color: #06aee2;
+}
+
+.create h1{
+  font-size: 1rem;
+  color: azure;
+
+}
+.create p{
+  margin:0 1em ;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #06aee2;
+  text-align: center;
+  
+}
+
+.question1,
+.question2,
+.question3,
+.question4
+{
+  height: 500px;
+  width: 70vw;
+  background-color: rgb(49, 48, 48); 
+  /* margin: 0 auto; */
+  grid-row: 1 /  3;
+  grid-column: 4 / 11 ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  /* justify-content: space-evenly;  */
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 4em;
+}
+.question2{
+  grid-row: 3/5;
+}
+.question3{
+  grid-row: 6/8;
+}
+.question4{
+  grid-row: 9/11;
+}
+/* *********************** font and margins */
+.answers1 h1,
+.question1-h1,
+.answers2 h1,
+.question2-h1,
+.answers3 h1,
+.question3-h1,
+.answers4 h1,
+.question4-h1{
+  margin-top: 1em;
+  text-align: start;
+  margin-left: 1em;
+}
+.answers1 p,
+.answers2 p,
+.answers3 p,
+.answers4 p
+{
+ margin-top: 1em;
+ text-align: start;
+}
+/* *************************** */
