@@ -52,6 +52,7 @@ let nextBtn5 = document.querySelector(".order-paragraph button")
 let a = 0
 let b = 0
 let c = 0
+let d = 0
 // *******************************
 nextBtn1.addEventListener("click",function(){
     if(a !== 0 ){
@@ -69,7 +70,9 @@ nextBtn3.addEventListener("click",function(){
     }
 })
 nextBtn4.addEventListener("click",function(){
-    slide4.classList.add("hidden")
+    if(d !== 0 ){
+        slide4.classList.add("hidden")
+    }
 })
 nextBtn5.addEventListener("click",function(){
     slide5.classList.add("hidden")
@@ -135,4 +138,64 @@ answer23.addEventListener("click",function(){
     answer22.classList.remove("choice")
     nextBtn2.style.background ="#06aee2"
     b=3
+})
+// *************************** listeners for THIRD slide
+const answer31 = document.querySelector(".answers3-1")
+const answer32 = document.querySelector(".answers3-2")
+const answer33 = document.querySelector(".answers3-3")
+
+
+answer31.addEventListener("click",function(){
+    answer31.classList.add("choice")
+    answer32.classList.remove("choice")
+    answer33.classList.remove("choice")
+    nextBtn3.style.background ="#06aee2"
+    c=1
+})
+
+answer32.addEventListener("click",function(){
+    answer32.classList.add("choice")
+    answer31.classList.remove("choice")
+    answer33.classList.remove("choice")
+    nextBtn3.style.background ="#06aee2"
+    c=2
+})
+
+answer33.addEventListener("click",function(){
+    answer33.classList.add("choice")
+    answer31.classList.remove("choice")
+    answer32.classList.remove("choice")
+    nextBtn3.style.background ="#06aee2"
+    c=3
+})
+// ************************* listeners for FOURTH question
+
+
+const answer41 = document.querySelector(".answers4-1")
+const answer42 = document.querySelector(".answers4-2")
+const answer43 = document.querySelector(".answers4-3")
+
+
+answer41.addEventListener("click",function(){
+    answer41.classList.add("choice")
+    answer42.classList.remove("choice")
+    answer43.classList.remove("choice")
+    nextBtn4.style.background ="#06aee2"
+    d=1
+})
+
+answer42.addEventListener("click",function(){
+    answer42.classList.add("choice")
+    answer41.classList.remove("choice")
+    answer43.classList.remove("choice")
+    nextBtn4.style.background ="#06aee2"
+    d=2
+})
+
+answer43.addEventListener("click",function(){
+    answer43.classList.add("choice")
+    answer41.classList.remove("choice")
+    answer42.classList.remove("choice")
+    nextBtn4.style.background ="#06aee2"
+    d=3
 })

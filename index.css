@@ -476,9 +476,13 @@ select {
 
 .answers3-1,
 .answers3-2,
-.answers3-3
+.answers3-3,
+
+.answers4-1,
+.answers4-2,
+.answers4-3
 {
-  background-color: #137fa0;
+  background-color: rgb(17, 15, 15);
   grid-row: 3;
   border-radius: 5px;
   cursor: pointer;
@@ -493,9 +497,15 @@ select {
 
 .answers3-1:hover,
 .answers3-2:hover,
-.answers3-3:hover
+.answers3-3:hover,
+
+.answers4-1:hover,
+.answers4-2:hover,
+.answers4-3:hover
 {
-  background-color: #06aee2;
+  /* background-color: #06aee2; */
+  background-color: aqua;
+  
 }
 .answers1-1:active,
 .answers1-2:active,
@@ -507,7 +517,11 @@ select {
 
 .answers3-1:active,
 .answers3-2:active,
-.answers3-3:active
+.answers3-3:active,
+
+.answers4-1:active,
+.answers4-2:active,
+.answers4-3:active
 {
   background-color: #07c1fa;
 }
@@ -516,7 +530,8 @@ select {
 /* ************************** ALL SLIDES */
 .question1-h1,
 .question2-h1,
-.question3-h1
+.question3-h1,
+.question4-h1
 {
   grid-row: 2;
   grid-column: 2/13;
@@ -526,7 +541,8 @@ select {
 }
 .answers1-1,
 .answers2-1,
-.answers3-1
+.answers3-1,
+.answers4-1
 {
   grid-row:3/6;
   grid-column: 2/13;
@@ -537,7 +553,8 @@ select {
 }
 .answers1-2,
 .answers2-2,
-.answers3-2
+.answers3-2,
+.answers4-2
 {
   grid-row:6/9;
   grid-column: 2/13;
@@ -547,7 +564,8 @@ select {
 }
 .answers1-3,
 .answers2-3,
-.answers3-3
+.answers3-3,
+.answers4-3
 {
   grid-row:9/12;
   grid-column: 2/13;
@@ -557,7 +575,8 @@ select {
 }
 .question1 button,
 .question2 button,
-.question3 button
+.question3 button,
+.question4 button
 {
   grid-row: 12;
   grid-column: 2/13;
@@ -582,10 +601,36 @@ select {
 .answers3-3 p,
 .answers3-1 h1,
 .answers3-2 h1,
-.answers3-3 h1
+.answers3-3 h1,
+
+.answers4-1 p,
+.answers4-2 p,
+.answers4-3 p,
+.answers4-1 h1,
+.answers4-2 h1,
+.answers4-3 h1
 {
-  color: black;
+  color:#137fa0;
 }
+
+/* .answers1-1 h1,
+.answers1-2 h1,
+.answers1-3 h1,
+
+.answers2-1 h1,
+.answers2-2 h1,
+.answers2-3 h1,
+
+.answers3-1 h1,
+.answers3-2 h1,
+.answers3-3 h1,
+
+.answers4-1 h1,
+.answers4-2 h1,
+.answers4-3 h1
+{
+  color:white;
+} */
 
 
 
@@ -613,6 +658,7 @@ select {
   display: none;
 }
 .choice{
-  background-color: #06aee2;
+  /* background-color: #06aee2; */
+  background-color: aqua;
 }
 /* ******************************  */
