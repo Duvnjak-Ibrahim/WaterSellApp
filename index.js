@@ -51,6 +51,7 @@ let slide5 = document.querySelector(".order-paragraph")
 let nextBtn5 = document.querySelector(".order-paragraph button")
 let a = 0
 let b = 0
+let c = 0
 // *******************************
 nextBtn1.addEventListener("click",function(){
     if(a !== 0 ){
@@ -63,7 +64,9 @@ nextBtn2.addEventListener("click",function(){
     }
 })
 nextBtn3.addEventListener("click",function(){
-    slide3.classList.add("hidden")
+    if(c !== 0 ){
+        slide3.classList.add("hidden")
+    }
 })
 nextBtn4.addEventListener("click",function(){
     slide4.classList.add("hidden")
