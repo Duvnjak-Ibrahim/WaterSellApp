@@ -127,7 +127,7 @@ select {
   /* margin: 0 1em; */
   grid-row: 2 /  10;
   grid-column: 1 / 14 ;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;  
@@ -156,7 +156,7 @@ select {
   
   font-weight: 600;
   color:black;
-  /* text-align: start; */
+ 
 }
 .intro-box button{
   
@@ -206,7 +206,7 @@ select {
 
 .whyFromUs-box{
   height: 90vh;
-  /* width: 80vw; */
+  
   background-image: 
     url(/w-images/water-photo.avif);
     background-color: #06aee2;
@@ -216,13 +216,13 @@ select {
   margin: 0 auto;
   grid-row: 1 /  5;
   grid-column: 1 / 14 ;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;  
   justify-content:space-between;
   text-align: center;
- 
+  margin: 0 0.1em;
 }
 .whyFromUs-h{
   order: 1;
@@ -669,3 +669,157 @@ select {
   color: yellowgreen;
 }
 /* ******************************  */
+@media (min-width:725px){
+  .intro-box{
+    grid-column: 2/13;
+  }
+  .intro-box{
+    justify-content:none;
+  }
+  .intro-box2 p{
+    width: 500px;
+    font-size: 1.1rem;
+  }
+
+  .span1{
+    font-size: 1.1rem;
+    font-weight: 900;
+    color:#06aee2;
+    letter-spacing: 1.15px;
+  }
+  .green-p{
+    color: rgb(152, 248, 8);
+    letter-spacing: 1px;
+  }
+  .green-h{
+    color: greenyellow;
+    font-size: 3rem;
+   
+  }
+  /* *********************** why section */
+  .whyFromUs-box{
+    grid-column: 2/13;
+  }
+  .whyFromUs-box p{
+   width: 620px;
+   font-size: 1.1rem;
+  }
+  /* ********************** choose section */
+  .choose-describe{
+    grid-column: 3 / 12 ;
+    margin-top: 4em;
+  }
+  .choose-describe p{
+    width: 500px;
+    padding: 2.5em;
+    font-size: 1.1rem;
+  }
+
+
+  .choose-quality{
+    grid-column: 3 / 12 ;
+    margin-top: 4em;
+  }
+  .choose-quality p{
+    width: 500px;
+    padding: 2.5em;
+    font-size: 1.1rem;
+  }
+
+
+  .choose-benefit{
+    grid-column: 3 / 12 ;
+    margin-top: 4em;
+  }
+  .choose-benefit p{
+    width: 500px;
+    padding: 2.5em;
+    font-size: 1.1rem;
+  }
+
+
+  .choose-shipping{
+    grid-column: 3 / 12 ;
+    margin-top: 4em;
+  }
+  .choose-shipping p{
+    width: 500px;
+    padding: 2.5em;
+    font-size: 1.1rem;
+  }
+  /* *********************** create section */
+  .question1{
+    grid-template: repeat(14,1fr) / repeat(14,1fr);
+    grid-column: 3 / 12 ;
+  }
+  .question2{
+    grid-template: repeat(14,1fr) / repeat(14,1fr);
+    grid-column: 3 / 12 ;
+  }
+  .question3{
+    grid-template: repeat(14,1fr) / repeat(14,1fr);
+    grid-column: 3 / 12 ;
+  }
+  .question4{
+    grid-template: repeat(14,1fr) / repeat(14,1fr);
+    grid-column: 3 / 12 ;
+  }
+  .answers1-1,
+  .answers2-1,
+  .answers3-1,
+  .answers4-1
+  {
+    grid-row: 3/10;
+    grid-column: 2/6;
+    
+
+    justify-content: center;
+  }
+  .answers1-2,
+  .answers2-2,
+  .answers3-2,
+  .answers4-2
+  {
+    grid-row: 3/10;
+    grid-column: 6/10;
+
+    justify-content: center;
+
+  }
+  .answers1-3,
+  .answers2-3,
+  .answers3-3,
+  .answers4-3
+  {
+    grid-row: 3/10;
+    grid-column: 10/14;  
+
+    justify-content: center;
+
+  }
+  .question1 button,
+  .question2 button,
+  .question3 button,
+  .question4 button
+  {
+    padding: 2rem 0;
+    grid-column: 2/14;
+  }
+
+
+  .order-paragraph{
+    grid-column: 3 / 12 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .order-paragraph p{
+    width: 500px;
+    margin-right: 1.5em;
+  }
+  .order-paragraph button{
+    
+    padding: 2em 35%;
+  }
+}
