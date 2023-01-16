@@ -53,29 +53,88 @@ let a = 0
 let b = 0
 let c = 0
 let d = 0
+let paragraph = `I want `
+let price = ``
 // *******************************
 nextBtn1.addEventListener("click",function(){
     if(a !== 0 ){
         slide1.classList.add("hidden")
     }
+    if(a === 1){
+        paragraph+= `Mineral water `
+    }
+    if(a === 2){
+        paragraph+= `Distilled water `
+    }
+    if(a === 3){
+        paragraph+= `Spirng water `
+    }
+    console.log(paragraph,a);
 })
 nextBtn2.addEventListener("click",function(){
     if(b !== 0 ){
         slide2.classList.add("hidden")
     }
+
+    if(b === 1){
+        paragraph+= `from well waters `
+    }
+    if(b === 2){
+        paragraph+= `from underground waters `
+    }
+    if(b === 3){
+        paragraph+= `from river waters `
+    }
+    console.log(paragraph,b);
 })
 nextBtn3.addEventListener("click",function(){
     if(c !== 0 ){
         slide3.classList.add("hidden")
     }
+    if(c === 1){
+        paragraph+= `with more magnesium `
+    }
+    if(c === 2){
+        paragraph+= `with more calcium `
+    }
+    if(c === 3){
+        paragraph+= `with more potassium `
+    }
+    console.log(paragraph,c);
 })
 nextBtn4.addEventListener("click",function(){
     if(d !== 0 ){
         slide4.classList.add("hidden")
     }
+
+    if(d === 1){
+        paragraph+= `in normal package`
+        price = `48$`
+    }
+    if(d === 2){
+        paragraph+= `in big package`
+        price = `64$`
+    }
+    if(d === 3){
+        paragraph+= `in premium package`
+        price = `99$`
+    }
+    document.querySelector(".order-paragraph-p")
+    .textContent=paragraph
+
+    document.querySelector(".price")
+    .textContent=price
+    console.log(paragraph,price);
+
 })
 nextBtn5.addEventListener("click",function(){
-    slide5.classList.add("hidden")
+    document.querySelector(".order-paragraph-p")
+    .textContent=`Your order is on the way.
+                 Look out of the window often.
+                 You never know how fast package is going to come.`
+    document.querySelector(".order-paragraph-p").style.color="yellowgreen"
+    document.querySelector(".price").classList.add("hidden")
+    nextBtn5.classList.add("hidden")
 })
 
 
