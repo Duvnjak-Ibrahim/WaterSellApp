@@ -129,9 +129,10 @@ nextBtn5.addEventListener("click",function(){
     .textContent=`Your order is on the way.
                  Look out of the window often.
                  You never know how fast package is going to be delivered.`
-    document.querySelector(".order-paragraph-p").style.color="yellowgreen"
-    document.querySelector(".price").classList.add("hidden")
-    nextBtn5.classList.add("hidden")
+                 document.querySelector(".order-paragraph-p").style.color="yellowgreen"
+                 document.querySelector(".price").classList.add("hidden")
+                 nextBtn5.classList.add("hidden")
+                 document.querySelector(".order-paragraph").innerHTML+=`<img src="/w-images/icons8-checkmark-96.png" >`            
 })
 
 
