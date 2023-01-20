@@ -428,9 +428,10 @@ select {
   grid-column: 1 / 14 ;
     margin: 1.2rem;
   border-radius: 10px;
-  display: grid;
-  grid-template: repeat(13,1fr) / repeat(13,1fr);
-  grid-gap: 12px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-around;
+  gap: 1em;
  
   text-align: center;
   border: 1px solid black;
@@ -482,10 +483,24 @@ select {
 .answers4-3
 {
   background-color: rgb(17, 15, 15);
-  grid-row: 3;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 5px;
   cursor: pointer;
 } 
+
+/* ********************** meida div */
+.media-div{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+/* ************************ */
+
 .answers1-1:hover,
 .answers1-2:hover,
 .answers1-3:hover,
@@ -532,45 +547,9 @@ select {
 .question3-h1,
 .question4-h1
 {
-  grid-row: 2;
-  grid-column: 2/13;
+ 
   color: azure;
-  margin-bottom: 3em;
-  font-size: 3rem;
-}
-.answers1-1,
-.answers2-1,
-.answers3-1,
-.answers4-1
-{
-  grid-row:3/6;
-  grid-column: 2/13;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  
-}
-.answers1-2,
-.answers2-2,
-.answers3-2,
-.answers4-2
-{
-  grid-row:6/9;
-  grid-column: 2/13;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-.answers1-3,
-.answers2-3,
-.answers3-3,
-.answers4-3
-{
-  grid-row:9/12;
-  grid-column: 2/13;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+
 }
 
 .question1 button,
@@ -578,8 +557,9 @@ select {
 .question3 button,
 .question4 button
 {
-  grid-row: 12;
-  grid-column: 2/13;
+ width: 90%;
+ margin: 0 auto;
+
 }
 /* *********************** */
 .answers1-1 p,
@@ -615,7 +595,9 @@ select {
   color:#137fa0;
 }
 
-
+.order-paragraph img{
+  max-width: 100%;
+}
 
 
 
@@ -642,16 +624,13 @@ select {
 }
 
 .order-paragraph-p{
-  grid-row: 2/7;
-  grid-column: 2/13;
+
 }
 .price{
-  grid-row: 8/9;
-  grid-column: 2/13;
+
 }
 .order-paragraph button{
-  grid-row: 10/13;
-  grid-column: 2/13;
+ 
   font-size: 1.3rem;
 }
 .order-paragraph button:hover{
@@ -749,28 +728,29 @@ select {
   }
   /* *********************** create section */
   .question1{
-    grid-template: repeat(14,1fr) / repeat(14,1fr);
-    grid-column: 3 / 12 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1em;
   }
   .question2{
-    grid-template: repeat(14,1fr) / repeat(14,1fr);
-    grid-column: 3 / 12 ;
+    display: flex;
+    gap:1em;
   }
   .question3{
-    grid-template: repeat(14,1fr) / repeat(14,1fr);
-    grid-column: 3 / 12 ;
+    display: flex;
+    gap:1em;
   }
   .question4{
-    grid-template: repeat(14,1fr) / repeat(14,1fr);
-    grid-column: 3 / 12 ;
+    display: flex;
+    gap:1em;
   }
   .answers1-1,
   .answers2-1,
   .answers3-1,
   .answers4-1
   {
-    grid-row: 3/10;
-    grid-column: 2/6;
+  
     
 
     justify-content: center;
@@ -780,8 +760,7 @@ select {
   .answers3-2,
   .answers4-2
   {
-    grid-row: 3/10;
-    grid-column: 6/10;
+   
 
     justify-content: center;
 
@@ -791,8 +770,7 @@ select {
   .answers3-3,
   .answers4-3
   {
-    grid-row: 3/10;
-    grid-column: 10/14;  
+    
 
     justify-content: center;
 
@@ -803,7 +781,7 @@ select {
   .question4 button
   {
     padding: 2rem 0;
-    grid-column: 2/14;
+   
   }
 
 
