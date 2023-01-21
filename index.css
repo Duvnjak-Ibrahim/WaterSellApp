@@ -421,12 +421,12 @@ select {
 .question4,
 .order-paragraph
 {
-  height: 500px;
+  height: 540px;
   
   background-color: rgb(49, 48, 48); 
   grid-row: 11 / 13;
   grid-column: 1 / 14 ;
-    margin: 1.2rem;
+  margin: 1.2rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;  
@@ -547,7 +547,7 @@ select {
 .question3-h1,
 .question4-h1
 {
- 
+ font-size: 1.3rem;
   color: azure;
 
 }
@@ -555,7 +555,8 @@ select {
 .question1 button,
 .question2 button,
 .question3 button,
-.question4 button
+.question4 button,
+.order-paragraph button
 {
  width: 90%;
  margin: 0 auto;
@@ -594,10 +595,11 @@ select {
 {
   color:#137fa0;
 }
-
-.order-paragraph img{
-  max-width: 100%;
+.order-paragraph p{
+  font-size: 1.5rem;
+  
 }
+
 
 
 
@@ -618,16 +620,11 @@ select {
   font-size: 1rem;
 }
 
-.order-paragraph p{
-  font-size: 1.3rem;
-  color: aqua;
-}
 
-.order-paragraph-p{
-
-}
-.price{
-
+.media-div-order{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .order-paragraph button{
  
@@ -635,6 +632,11 @@ select {
 }
 .order-paragraph button:hover{
   background-color: #06aee2;
+}
+.order-paragraph img{
+  width: 40%;
+  margin: 2em auto;
+  
 }
 /* *************************** class ADD / REMOVE section */
 .hidden{
@@ -647,7 +649,7 @@ select {
 .green{
   color: yellowgreen;
 }
-/* ******************************  */
+/* ****************************** media query */
 @media (min-width:725px){
   .intro-box{
     grid-column: 2/13;
@@ -745,6 +747,10 @@ select {
     display: flex;
     gap:1em;
   }
+  .order-paragraph{
+    display: flex;
+    gap:1em;
+  }
   .answers1-1,
   .answers2-1,
   .answers3-1,
@@ -785,19 +791,7 @@ select {
   }
 
 
-  .order-paragraph{
-    grid-column: 3 / 12 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .order-paragraph p{
-    width: 500px;
-    margin-right: 1.5em;
-  }
-  .order-paragraph button{
-    
-    padding: 2em 35%;
-  }
+  
+ 
+  
 }
