@@ -120,7 +120,7 @@ nextBtn4.addEventListener("click",function(){
     .textContent=paragraph
 
     document.querySelector(".price")
-    .textContent=price
+    .textContent=`Price: ${price}`
     console.log(paragraph,price);
 
 })
@@ -132,7 +132,7 @@ nextBtn5.addEventListener("click",function(){
                  document.querySelector(".order-paragraph-p").style.color="yellowgreen"
                  document.querySelector(".price").classList.add("hidden")
                  nextBtn5.classList.add("hidden")
-                 document.querySelector(".order-paragraph").innerHTML+=`<img src="/w-images/icons8-checkmark-96.png" >`            
+                 document.querySelector(".order-paragraph").innerHTML+=`<img src="/w-images/icons8-checkmark-128.png" >`            
 })
 
 
