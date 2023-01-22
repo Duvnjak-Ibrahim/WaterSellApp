@@ -280,7 +280,7 @@ select {
 /* ************************* */ 
 /* *************************************** */
 .choose{
-  height: 3200px;
+  height: 3500px;
   display: grid;
   grid-template: repeat(13,1fr) / repeat(13,1fr);
   grid-gap: 8px;
@@ -421,7 +421,7 @@ select {
 .question4,
 .order-paragraph
 {
-  height: 540px;
+  height: 580px;
   
   background-color: rgb(49, 48, 48); 
   grid-row: 11 / 13;
