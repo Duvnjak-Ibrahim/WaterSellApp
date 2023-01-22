@@ -455,10 +455,10 @@ select {
 
 
 
-.question1 h1,
-.question2 h1,
-.question3 h1,
-.question4 h1
+.question1 h1:not(.question1-h1),
+.question2 h1:not(.question2-h1),
+.question3 h1:not(.question3-h1),
+.question4 h1:not(.question4-h1)
 {
   margin-top: 0.4em;
  margin-bottom: 0.2em;
@@ -612,7 +612,7 @@ select {
   color:azure;
   border: none;
   border-radius: 5px;
-  padding: 1em ;
+  padding: 1.2em ;
   cursor: pointer;
   font-weight: 800;
   letter-spacing: 1px;
@@ -648,6 +648,9 @@ select {
 }
 .green{
   color: yellowgreen;
+}‚
+.yo{
+
 }
 /* ****************************** media query */
 @media (min-width:725px){
@@ -760,13 +763,15 @@ select {
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
-    
+    margin:0 1rem;
   }
+
   .media-div div{
     margin: 0.2rem;
     gap: none;
     height: 250px;
   }
+
   .answers1-1,
   .answers2-1,
   .answers3-1,
@@ -777,6 +782,7 @@ select {
 
     justify-content: center;
   }
+
   .answers1-2,
   .answers2-2,
   .answers3-2,
@@ -784,9 +790,10 @@ select {
   {
    
 
-    justify-content: center;
 
+    justify-content: center;
   }
+
   .answers1-3,
   .answers2-3,
   .answers3-3,
@@ -794,8 +801,8 @@ select {
   {
     
 
-    justify-content: center;
 
+    justify-content: center;
   }
   .question1 button,
   .question2 button,
